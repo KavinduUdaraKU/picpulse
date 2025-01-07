@@ -21,15 +21,15 @@
    */
 
   --smokey-black: hsl(0, 0%, 7%);
-  --eerie-black: hsl(0, 0%, 100%);
+  --eerie-black: hsl(0, 0%, 9%);
   --radical-red: hsl(346, 100%, 58%);
   --white_a9: hsla(0, 0%, 100%, 0.09);
   --white_a15: hsla(0, 0%, 100%, 0.15);
-  --white_a25: hsla(0, 0%, 0%, 0.25);
+  --white_a25: hsla(0, 0%, 100%, 0.25);
   --white_a50: hsla(0, 0%, 100%, 0.5);
   --white_a70: hsla(0, 0%, 100%, 0.7);
   --white_a75: hsla(0, 0%, 100%, 0.75);
-  --white_a80: hsla(0, 0%, 0%, 0.8);
+  --white_a80: hsla(0, 0%, 100%, 0.8);
   --jet-1: hsl(0, 0%, 20%);
   --jet-2: hsl(0, 0%, 16%);
   --white: hsl(0, 0%, 100%);
@@ -146,7 +146,7 @@ html {
 }
 
 body {
-  background-color: white;
+  background-color: var(--smokey-black);
   color: var(--white);
   font-size: 1.6rem;
   font-weight: var(--fw-400);
@@ -160,9 +160,9 @@ body.active { overflow: hidden; }
 
 ::-webkit-scrollbar { width: 5px; }
 
-::-webkit-scrollbar-track { background-color: black; }
+::-webkit-scrollbar-track { background-color: var(--white); }
 
-::-webkit-scrollbar-thumb { background-color: white; }
+::-webkit-scrollbar-thumb { background-color: var(--jet-2); }
 
 
 
