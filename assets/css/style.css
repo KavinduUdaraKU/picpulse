@@ -162,7 +162,7 @@ body.active { overflow: hidden; }
 
 ::-webkit-scrollbar-track { background-color: black; }
 
-::-webkit-scrollbar-thumb { background-color: var(--jet-2); }
+::-webkit-scrollbar-thumb { background-color: white; }
 
 
 
