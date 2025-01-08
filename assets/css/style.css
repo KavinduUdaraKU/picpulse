@@ -630,10 +630,11 @@ body.active { overflow: hidden; }
   place-content: center;
   margin-inline: auto;
   margin-block-start: 55px;
-  border: 1px solid var(--white_a15);
+  border: 1px solid #2a6fdb;
   border-radius: var(--radius-circle);
   transition: var(--transition-2);
   animation: scrollDown 2.5s linear infinite alternate;
+  color: #2a6fdb;
 }
 
 .gallery .scroll-down img { width: 22px; }
