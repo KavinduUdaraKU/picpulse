@@ -147,7 +147,6 @@ html {
 
 body {
   background-color: white;
-  color: black;
   font-size: 1.6rem;
   font-weight: var(--fw-400);
   line-height: 2.15;
@@ -211,7 +210,7 @@ body.active { overflow: hidden; }
 
 .img-holder {
   aspect-ratio: var(--width) / var(--height);
-  background-color: black;
+  background-color: rgb(255, 255, 255);
   overflow: hidden;
 }
 
@@ -240,7 +239,7 @@ body.active { overflow: hidden; }
 }
 
 .btn-icon {
-  background-color:black;
+  background-color:skyblue;
   border-radius: var(--border-radius, var(--radius-circle));
   display: grid;
   place-content: center;
@@ -250,7 +249,7 @@ body.active { overflow: hidden; }
 .btn-icon path { transition: var(--transition-2); }
 
 .btn-icon:is(:hover, :focus-visible) {
-  background-color: black;
+  background-color: rgb(255, 255, 255);
 }
 
 .btn-icon:is(:hover, :focus-visible) path {
