@@ -680,7 +680,7 @@ body.active { overflow: hidden; }
   transition: var(--transition-2);
 }
 
-.category-card:is(:hover, :focus-visible) .card-title { color: var(--white); }
+.category-card:is(:hover, :focus-visible) .card-title { color: #2a6fdb; }
 
 
 
@@ -1419,8 +1419,8 @@ body.active { overflow: hidden; }
     left: 0;
     width: 75px;
     height: 75px;
-    background-color: var(--white);
-    mix-blend-mode: exclusion;
+    background-color:#48d6d2;
+    mix-blend-mode: darken;
     border-radius: var(--radius-circle);
     transform: translate(-50%, -50%) scale(0.35);
     transition: transform 0.35s;
@@ -1428,7 +1428,7 @@ body.active { overflow: hidden; }
     z-index: 6;
   }
 
-  .cursor.hovered { transform: translate(-50%, -50%) scale(1.2); }
+  .cursor.hovered { transform: translate(-50%, -50%) scale(0.9); }
 
   .cursor.disabled { transform: translate(-50%, -50%) scale(0); }
 
