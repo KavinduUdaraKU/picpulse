@@ -20,6 +20,17 @@
     <link rel="icon" href="images/icons/favicon-192x192.png" sizes="192x192" />
     <link rel="apple-touch-icon-precomposed" href="images/icons/favicon-180x180.png" />
     <script src="https://kit.fontawesome.com/0af16e1f65.js" crossorigin="anonymous"></script>
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+    (function(){
+        emailjs.init({
+            publicKey: "YyXRq0RsVpMJICFGQ",
+        });
+    })();
+    </script>
+    <script src="js/contactscript.js"></script>
 </head>
 
 <body class="home">
@@ -34,56 +45,9 @@
                 </li>
                 <li class="menu-item menu-item-has-children">
                     <a href="portfolio.html">Portfolio</a>
-                    <ul class="sub-menu">
-                        <li class="menu-item menu-item-has-children">
-                            <a href="gallery-masonry.html">Gallery Masonry</a>
-                            <ul class="sub-menu">
-                                <li class="menu-item"><a href="gallery-masonry-fullwidth.html">Full Width</a></li>
-                            </ul>
-                        </li>
-                        <li class="menu-item"><a href="gallery-1-2-cols.html">Gallery 1-2 Cols</a></li>
-                        <li class="menu-item menu-item-has-children">
-                            <a href="gallery-3-cols.html">Gallery 3 Cols</a>
-                            <ul class="sub-menu">
-                                <li class="menu-item"><a href="gallery-3-cols-fullwidth.html">Full Width</a></li>
-                            </ul>
-                        </li>
-                        <li class="menu-item menu-item-has-children">
-                            <a href="gallery-4-cols.html">Gallery 4 Cols</a>
-                            <ul class="sub-menu">
-                                <li class="menu-item"><a href="gallery-4-cols-fullwidth.html">Full Width</a></li>
-                            </ul>
-                        </li>
-                    </ul>
                 </li>
                 <li class="menu-item menu-item-has-children">
                     <a href="blog.html">Blog</a>
-                    <ul class="sub-menu">
-                        <li class="menu-item menu-item-has-children">
-                            <a href="blog-list.html">Blog List</a>
-                            <ul class="sub-menu">
-                                <li class="menu-item"><a href="blog-list-fullwidth.html">Full Width</a></li>
-                            </ul>
-                        </li>
-                        <li class="menu-item menu-item-has-children">
-                            <a href="blog-grid-2-cols.html">Blog Grid 2 Cols</a>
-                            <ul class="sub-menu">
-                                <li class="menu-item"><a href="blog-grid-2-cols-fullwidth.html">Full Width</a></li>
-                            </ul>
-                        </li>
-                        <li class="menu-item"><a href="blog.html">Blog Grid 3 Cols</a></li>
-                        <li class="menu-item"><a href="blog-classic.html">Blog Classic</a></li>
-                        <li class="menu-item"><a href="blog-single-post.html">Single Post</a></li>
-                    </ul>
-                </li>
-                <li class="menu-item menu-item-has-children">
-                    <a href="#">Pages</a>
-                    <ul class="sub-menu">
-                        <li class="menu-item"><a href="about-me.html">About Me</a></li>
-                        <li class="menu-item"><a href="about-us.html">About Us</a></li>
-                        <li class="menu-item"><a href="faq-page.html">FAQ Page</a></li>
-                        <li class="menu-item"><a href="contact-2.html">Contact 2</a></li>
-                    </ul>
                 </li>
                 <li class="menu-item"><a href="pricing.html">Pricing</a></li>
                 <li class="menu-item current-menu-item"><a href="contact.html">Contact</a></li>
@@ -121,32 +85,6 @@
                     </li>
                     <li class="menu-item menu-item-has-children">
                         <a href="blog.html">Blog</a>
-                        <ul class="sub-menu">
-                            <li class="menu-item menu-item-has-children">
-                                <a href="blog-list.html">Blog List</a>
-                                <ul class="sub-menu">
-                                    <li class="menu-item"><a href="blog-list-fullwidth.html">Full Width</a></li>
-                                </ul>
-                            </li>
-                            <li class="menu-item menu-item-has-children">
-                                <a href="blog-grid-2-cols.html">Blog Grid 2 Cols</a>
-                                <ul class="sub-menu">
-                                    <li class="menu-item"><a href="blog-grid-2-cols-fullwidth.html">Full Width</a></li>
-                                </ul>
-                            </li>
-                            <li class="menu-item"><a href="blog.html">Blog Grid 3 Cols</a></li>
-                            <li class="menu-item"><a href="blog-classic.html">Blog Classic</a></li>
-                            <li class="menu-item"><a href="blog-single-post.html">Single Post</a></li>
-                        </ul>
-                    </li>
-                    <li class="menu-item menu-item-has-children">
-                        <a href="#">Pages</a>
-                        <ul class="sub-menu">
-                            <li class="menu-item"><a href="about-me.html">About Me</a></li>
-                            <li class="menu-item"><a href="about-us.html">About Us</a></li>
-                            <li class="menu-item"><a href="faq-page.html">FAQ Page</a></li>
-                            <li class="menu-item"><a href="contact-2.html">Contact 2</a></li>
-                        </ul>
                     </li>
                     <li class="menu-item"><a href="pricing.html">Pricing</a></li>
                     <li class="menu-item current-menu-item"><a href="contact.html">Contact</a></li>
@@ -191,13 +129,13 @@
                 <div class="col-lg-6">
                     <h3 class="margin-b24">Get in Touch</h3>
                     <div id="contact-form-holder">
-                        <form method="post" id="contact-form" action='include/contact-process.php'>
-                            <p><input type="text" name="name" class="comm-field" placeholder="Name" /></p>
-                            <p><input type="text" name="email" class="comm-field" placeholder="Email" /> </p>
-                            <p><input type="text" name="subject" class="comm-field" placeholder="Subject" /> </p>
+                        <form>
+                            <p><input type="text" name="name" id="name" class="comm-field" placeholder="Name" /></p>
+                            <p><input type="text" name="email" id="email" class="comm-field" placeholder="Email" /> </p>
+                            <p><input type="text" name="subject" id="subject" class="comm-field" placeholder="Subject" /> </p>
                             <p><textarea name="message" id="msg-contact" rows="5" placeholder="Message"></textarea></p>
                             <p class="antispam">Leave this empty: <input type="text" name="url" /></p>
-                            <p><input type="submit" value="Send message" id="submit" /></p>
+                            <p><input type="submit" value="Send message" id="submit" onclick="sendmail()" /></p>
                         </form>
                     </div>
                     <!-- contact-form-holder-->
