@@ -23,13 +23,9 @@
     <script type="text/javascript"
         src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
     </script>
-    <script type="text/javascript">
-    (function(){
-        emailjs.init({
-            publicKey: "YyXRq0RsVpMJICFGQ",
-        });
-    })();
-    </script>
+        <script type="text/javascript">
+            emailjs.init('YyXRq0RsVpMJICFGQ')
+        </script>
     <script src="js/contactscript.js"></script>
 </head>
 
@@ -129,13 +125,14 @@
                 <div class="col-lg-6">
                     <h3 class="margin-b24">Get in Touch</h3>
                     <div id="contact-form-holder">
-                        <form>
+                        <form action="https://api.web3forms.com/submit" method="POST">
+                            <input type="hidden" name="access_key" value="ab88026b-29c3-46fd-8db6-f2e9251d0fbf">
                             <p><input type="text" name="name" id="name" class="comm-field" placeholder="Name" /></p>
                             <p><input type="text" name="email" id="email" class="comm-field" placeholder="Email" /> </p>
                             <p><input type="text" name="subject" id="subject" class="comm-field" placeholder="Subject" /> </p>
                             <p><textarea name="message" id="msg-contact" rows="5" placeholder="Message"></textarea></p>
                             <p class="antispam">Leave this empty: <input type="text" name="url" /></p>
-                            <p><input type="submit" value="Send message" id="submit" onclick="sendmail()" /></p>
+                            <p><input type="submit" value="Send message" id="submit"/></p>
                         </form>
                     </div>
                     <!-- contact-form-holder-->
